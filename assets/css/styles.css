@@ -82,7 +82,7 @@ nav a:hover {
     color: var(--text-hover-color);
 }
 
-/* Header Styles */
+/* Header hero Styles */
 .hero {
     text-align: center;
     margin: 0 50px;
@@ -142,7 +142,6 @@ nav a:hover {
     color: black;
 }
 
-
 /* Main Content Styles */
 main.portfolio {
     background-color: var(--background-color);
@@ -155,6 +154,24 @@ main.portfolio {
     gap: 8px;
     align-items: center;
 }
+
+main.about {
+    background: url(../images/background.webp);
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    padding: 5vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Portfolio Styles */
 
 .portfolio-item {
     background-color: coral;
@@ -199,6 +216,8 @@ main.portfolio {
     border: 2px solid white;
     border-radius: 10px;
     text-decoration: none;
+    text-align: left;
+    text-transform: capitalize;
 }
 
 .portfolio-item:hover .sneaky {
@@ -233,6 +252,129 @@ main.portfolio {
     color: #d3d3d3;
     margin: 5px;
     padding: 0 0 10px 0;
+}
+
+/* About Section Styles */
+.about .row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    margin-top: 70px;
+}
+.about .col1 {
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 17px;
+}
+.about .profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.about .col2 {
+    flex: 3;
+    text-align: left;
+    padding: 0 20px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 10px;
+}
+.col2 h1 {
+    margin-bottom: 20px;
+    padding: 20px 0 0 0;
+    font-size: 2.5rem;
+}
+.col2 p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.extra .col1, .extra .col2 {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.extra .col1 {
+    max-width: 25vw;
+    overflow-x: hidden;
+    overflow-y: visible;
+    min-height: 120px;
+    align-items: center;
+}
+.extra .col2 {
+    flex: 4;
+    padding: 20px;
+    max-height: 120px;
+
+}
+.extra .row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    overflow: -moz-scrollbars-none; /* Firefox */
+    width: fit-content;
+}
+.extra .row::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+/* scroll loop */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.extra .row {
+    animation:scroll 20s linear infinite;
+}
+
+.extra .tool{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    min-width: 120px;
+    text-align: center;
+    margin: 15px 5px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.overhead {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 1.2rem;
+}
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family-alt);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+ul.skills-list ::after{
+    content: " |";
+    color: white;
+    font-weight: bold;
+}
+.skills-list li {
+    display: inline;
+    margin-right: 5px;
+}
+.profile-img {
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
 }
 
 /* Footer Styles */
@@ -298,4 +440,12 @@ footer {
 .cta-contact a:hover {
     background-color: whitesmoke;
     color: black;
+}
+
+/* about cta */
+
+.about .cta-contact {
+    margin-top: 50px;
+    text-align: left;
+    max-width: 100%;
 }
