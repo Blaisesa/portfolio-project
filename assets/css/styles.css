@@ -171,6 +171,22 @@ main.about {
     text-align: center;
 }
 
+main.contact {
+    background: url(../images/background.webp);
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    padding: 5vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 /* Portfolio Styles */
 
 .portfolio-item {
@@ -376,6 +392,61 @@ ul.skills-list ::after{
     border-bottom: 2px solid white;
     border-left: 2px solid white;
 }
+
+/* Contact Section Styles */
+.contact-info {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    border-radius: 12px;
+}
+.contact-info h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+    .info-box {
+    display: inline-flex;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: var(--font-family-alt);
+    font-size: 1.2rem;
+    height: 150px;
+    width: 150px;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.info-box p {
+    margin: 0;
+    position: relative;
+    color: inherit;
+}
+.info-box:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
 
 /* Footer Styles */
 footer {
