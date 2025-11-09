@@ -28,13 +28,13 @@
     <main id="work" class="portfolio">
         <div class="portfolio-item"><img src="assets//images/portfolio/hotelopening-portfolio.webp"
                 alt="Preview of Hotel Opening Project">
-            <a class="sneaky" href="#">
+            <button class="open-popup sneaky" data-popup="popup1">
                 <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
                 <div>
                     <h3>Hotel Openings Teaser Reels</h3>
                     <h4>Radisson Hotel Group</h4>
                 </div>
-            </a>
+            </button>
         </div>
         <div class="portfolio-item"><img src="assets//images/portfolio/biactive-portfolio.webp"
                 alt="Preview of Biactive Project">
@@ -177,12 +177,11 @@
         </div>
     </main>
     <!-- Pop up containers for each portfolio item -->
-    <div id="popup1" class="popup">
-        <div class="popup-overlay">
-            <span class="close-btn">&times;</span>
-            <div class="container row">
-                <div class="col">
-                    <p class="sub-head">text on top</p>
+    <div id="popup1" class="popup-overlay">
+        <span class="close-popup">&times;</span>
+        <div class="container row">
+            <div class="col">
+                <p class="sub-head">text on top</p>
                     <h2>Project Title 1</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque neque dicta ducimus nihil officia
                         facilis. Laborum illum nisi, aspernatur corporis repudiandae voluptas, debitis reiciendis labore
@@ -205,6 +204,7 @@
             </div>
         </footer>
         <script src="https://kit.fontawesome.com/1eb19e26b6.js" crossorigin="anonymous"></script>
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>
