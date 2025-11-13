@@ -353,16 +353,19 @@ main.contact {
     }
 }
 .extra .row {
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 
 .extra .tool {
     padding: 10px;
-    border: 2px solid white;
     border-radius: 10px;
     min-width: 120px;
     text-align: center;
     margin: 15px 5px;
+}
+.extra .tool img {
+    width: 65px;
+    height: 65px;
 }
 .wrapper {
     display: flex;
